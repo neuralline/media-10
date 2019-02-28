@@ -10,6 +10,8 @@
 
 # production
 /build
+.cashe/
+/.cashe/
 
 # misc
 .DS_Store
