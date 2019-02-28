@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
-  font-size: 16px;
+  font-size: 14px;
   color: #000000;
   line-height: 1.26;
 }
@@ -45,7 +45,10 @@ header .container {
   padding: 10px 10px 80px 10px;
 }
 header .header-message {
-  text-align: center;
+  max-width: 720px;
+  margin: 450px auto 10px;
+  display: block;
+  text-align: left;
   padding: 10px;
   color: #FFF;
   font-size: 32px;
@@ -159,14 +162,18 @@ img {
   }
 
   .m10-featured .m10-featured-image {
-    margin: 0px -20px;
+    margin: 0px -40px;
   }
   .m10-featured .m10-featured-item {
     padding: 20px;
   }
+  .m10-featured .container {
+    padding: 15px;
+  }
 
   .m10-bottom-logo {
     float: none;
+    margin: 15px auto;
   }
 
   header {
