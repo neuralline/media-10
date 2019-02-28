@@ -1,0 +1,31 @@
+{
+  "name": "media-10",
+  "version": "0.1.0",
+  "description": "media 10 - neuralline",
+  "main": "index.js",
+  "author": "Darik Hart",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuralline/media-10.git"
+  },
+  "keywords": [
+    "media10",
+    "neuralline"
+  ],
+  "bugs": {
+    "url": "https://github.com/neuralline/media-10/issues"
+  },
+  "homepage": "https://github.com/neuralline/media-10#readme",
+  "dependencies": {
+    "holo-carousel": "^0.1.2",
+    "parcel": "^1.11.0"
+  },
+  "devDependencies": {
+    "sass": "^1.17.2"
+  }
+}
