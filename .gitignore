@@ -13,6 +13,7 @@
 .cashe/
 /.cashe
 /dist
+dist/
 
 # misc
 .DS_Store
