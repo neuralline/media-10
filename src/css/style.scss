@@ -4,12 +4,13 @@ $primary-bg:#014054;
 $secondary-bg:#ffbbb5;
 $default-color:#FFF;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Muli');
 
 body {
   font-size: 14px;
   color: #000000;
   line-height: 1.26;
+  font-family: 'Muli', sans-serif;
 
 }
 
@@ -21,7 +22,7 @@ h1 {
 
 h2 {
   color: $primary-color;
-  font-size: 36px;
+  font-size: 32px;
 
 }
 
@@ -34,14 +35,15 @@ h3 {
 
 h1,
 h2 {
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 20px 0;
 }
 
 header {
   position: relative;
   display: block;
-  min-height: 1240px;
+  padding: 20px 40px;
+  min-height: 1080px;
   background: url("../assets/sophie-mutevelian-238-a-6339.jpg") no-repeat no-repeat center center;
   background-size: auto 100%;
 
@@ -51,28 +53,38 @@ header {
 
   .m10-brand-logo {
     max-width: 250px;
-
   }
 
-  .container {
-    padding: 10px 10px 80px 10px;
-
+  .bottom-holder {
+    grid-template-rows: 1fr 200px;
+    grid-template-columns: 1fr;
+    display: grid;
+    position: relative;
+    height: 100vh;
+    max-width: 960px;
+    align-self: end;
+    justify-content: center;
+    align-content: end;
+    margin: 0 auto;
   }
 
   .header-message {
-
+    justify-self: start;
+    align-self: end;
     max-width: 720px;
-    margin: 450px auto 10px;
     display: block;
     text-align: left;
     padding: 10px;
     color: $default-color;
     font-size: 32px;
-    font-weight: 900;
     line-height: normal;
     letter-spacing: 0.5px;
-    text-align: left;
+    font-weight: 800;
   }
+}
+
+footer {
+  padding: 20px;
 }
 
 a {
@@ -92,7 +104,13 @@ img {
 }
 
 .m10-jumbotron {
-  background-color: $secondary-bg
+  background-color: $secondary-bg;
+
+  .container {
+    max-width: 953px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .m10-carousel {
@@ -108,7 +126,6 @@ img {
     color: $default-color;
   }
 }
-
 
 
 .m10-btn {
@@ -135,14 +152,12 @@ img {
 }
 
 .m10-featured-item {
-  padding: 30px;
+  padding: 40px;
 }
 
 .m10-featured-image {
   padding: 0;
 }
-
-
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -179,6 +194,12 @@ img {
       justify-self: center
     }
   }
+
+  .m10-jumbotron {
+    .container {
+      padding: 20px 40px
+    }
+  }
 }
 
 .m10-bottom-logo {
@@ -211,31 +232,34 @@ img {
 
   .m10-bottom-logo {
     float: none;
-    margin: 15px auto;
+    display: block;
+    margin: 20px auto;
   }
 
-
-
   header {
+    padding: 20px;
     min-height: 569px;
     background: url("../assets/sophie-mutevelian-238-a-6339.jpg") no-repeat no-repeat right center;
     background-size: auto 100%;
-
 
     .nav-link {
       font-size: 16px;
     }
 
-
     .m10-brand-logo {
       max-width: 192px;
+    }
 
+    .bottom-holder {
+      height: auto;
     }
 
     .header-message {
+      margin: 0 auto;
       font-size: 22px;
     }
   }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -262,7 +286,6 @@ img {
   box-sizing: border-box;
   margin: 0 auto;
 
-
   .holo-container {
     font-size: 0;
     position: relative;
@@ -283,32 +306,23 @@ img {
     width: 307px;
     height: 524px;
     font-size: 14px;
-    white-space: nowrap;
     color: #fff;
     display: inline-block;
-    background: rgba(2, 45, 95, 0.1);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-    text-align: center;
     overflow: hidden;
     margin-right: 12px;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    border-radius: 6px;
-
-    :hover {
-      border-color: none
-    }
-
-
+    white-space: normal;
   }
-
-
 
   .holo-container:last-child {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
+}
+
+.transition {
+  transition: all 0.6s ease;
+  transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
